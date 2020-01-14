@@ -1,0 +1,95 @@
+label,content
+content," <div class=""strib-styles ssa ssb ssc"">
+  <section class=""container-lg elex-header"">
+      <h5 class=""font-popular-light topline""><span class=""font-popular-medium""><a href=""http://www.startribune.com/local/duluth/"">Duluth</a></span></h5>
+      <h1>How Duluth's school redistricting might be shaped</h1>
+    <div class=""byline"">
+      <address>By
+        <a rel=""author"" href=""http://www.startribune.com/katie-galioto/511230711/"">Katie Galioto</a>
+        and 
+        <a rel=""author"" href=""http://www.startribune.com/jeff-hargarten/274254381/"">Jeff Hargarten</a>
+      </address>
+      <span class=""spacer""></span>
+      Star Tribune
+      <span class=""spacer-alt""></span>
+      <time pubdate datetime=""2019-11-06T16:00:00"">January 15, 2020</time>
+    </div>
+    <p></p>
+    <!-- share -->
+  </section>
+  
+  <section class=""container-lg"">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      
+  </section>
+
+  <div class=""rule""></div>
+  <section class=""container-lg"">
+      <h2 class=""chartTitle"">Scenario One</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+  <div class=""slide"">
+
+      <div class=""map"" id=""mapper1"">
+          <svg width=""520"" height=""500"" viewBox=""0 0 520 500"" preserveAspectRatio=""xMidYMid""></svg>
+      </div>
+
+  </div>
+
+
+  <div class=""rule""></div>
+  <section class=""container-lg"">
+      <h2 class=""chartTitle"">Scenario Two</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+  
+  <div class=""slide"">
+
+      <div class=""map"" id=""mapper2"">
+          <svg width=""520"" height=""500"" viewBox=""0 0 520 500"" preserveAspectRatio=""xMidYMid""></svg>
+      </div>
+  </div>
+
+
+  <div class=""rule""></div>
+  <section class=""container-lg"">
+      <h2 class=""chartTitle"">Scenario Three</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+  
+  <div class=""slide"">
+
+      <div class=""map"" id=""mapper3"">
+          <svg width=""520"" height=""500"" viewBox=""0 0 520 500"" preserveAspectRatio=""xMidYMid""></svg>
+      </div>
+  </div>
+
+  <div class=""slide"">
+    <div class=""byline"">Data source: City of Duluth</div>
+  </div>
+
+<section class=""container-lg"">
+    <div class=""article-author-contact"">
+    <div class=""article-author-hcard"">
+        <p></p><p><span style=""font-size: 10pt; font-family: Arial;""><strong>Katie Galioto </strong>is a general assignment reporter at the Star Tribune. In 2019, after a few years away, she returned to the Minneapolis area, where she was born and raised.</span></p><p></p>
+        <p><a class=""article-author-hcard__email"" target=""_blank"" href=""mailto:katie.galioto@startribune.com?subject=How Duluth's school redistricting might be shape"" data-linkname=""katie.galioto@startribune.com"" data-linktype=""email"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">katie.galioto@startribune.com</a>
+          <a class=""article-author-hcard__phone"" href=""tel:623-673-4478"" data-linkname=""623-673-4478"" data-linktype=""phone"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">623-673-4478</a>
+          <a class=""article-author-hcard__twitter"" href=""http://twitter.com/katiegalioto"" target=""_blank"" data-linkname=""katiegalioto"" data-linktype=""twitter"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">katiegalioto</a></p>
+  </div>
+
+      <div class=""article-author-hcard"">
+          <p></p><p><span style=""font-size: 10pt; font-family: Arial;""><strong>Jeff Hargarten </strong>is a data journalist for the Star Tribune focusing on data-driven reporting and visualization. He has covered elections, technology, criminal justice, demographics and public health.</span></p><p></p>
+          <p><a class=""article-author-hcard__email"" target=""_blank"" href=""mailto:Jeff.Hargarten@startribune.com?subject=How Duluth's school redistricting might be shape"" data-linkname=""Jeff.Hargarten@startribune.com"" data-linktype=""email"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">Jeff.Hargarten@startribune.com</a>
+          <a class=""article-author-hcard__phone"" href=""tel:612-673-4642"" data-linkname=""612-673-4642"" data-linktype=""phone"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">612-673-4642</a>
+          <a class=""article-author-hcard__twitter"" href=""http://twitter.com/JeffHargarten"" target=""_blank"" data-linkname=""JeffHargarten"" data-linktype=""twitter"" data-modulename=""Article"" data-moduletype=""zone1-content"" data-position=""0-1-author"">JeffHargarten</a></p>
+    </div>
+  </div>
+</section>
+</div>"
+scripts,news/projects/all/20200124-duluth-schools/js/index.bundle.js
+styles,news/projects/all/20200124-duluth-schools/styles/index.bundle.css
+script libraries,"<script src=""https://cdn.polyfill.io/v2/polyfill.min.js""></script>"
+style libraries,

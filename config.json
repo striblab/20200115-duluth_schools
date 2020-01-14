@@ -1,0 +1,50 @@
+{
+  "about this file": "This document defines configuration for this project that is not content or copy.",
+  "projectIdentifier": "20200115-duluth_schools",
+
+  "cms": {
+    "defaultArticleContentTemplateRewriteClass": "article-lcd-body-content",
+    "pages": [
+      
+      {
+        "id": "index",
+        "articleId": "506439561D",
+        "lcd": "506439601",
+        "default": true
+      }
+      
+    ]
+  },
+
+
+  "styles": {
+    "globals": [
+    ]
+  },
+  "js": {
+    "globals": [
+      "https://cdn.polyfill.io/v2/polyfill.min.js"
+    ]
+  },
+  "publishToken": "3ca29abf2c621b9a9777fd0ba98c4b46",
+  "publish": {
+    "default": {
+      "bucket": "static.startribune.com",
+      "path": "news/projects-staging/all/20200115-duluth_schools",
+      "url": "http://static.startribune.com/news/projects-staging/all/20200115-duluth_schools/",
+      "cacheSeconds": 30
+    },
+    "testing": {
+      "bucket": "stribtest-bucket",
+      "path": "news/projects/20200115-duluth_schools",
+      "url": "https://s3.amazonaws.com/stribtest-bucket/news/projects/20200115-duluth_schools/",
+      "cacheSeconds": 30
+    },
+    "production": {
+      "bucket": "static.startribune.com",
+      "path": "news/projects/all/20200115-duluth_schools",
+      "url": "http://static.startribune.com/news/projects/all/20200115-duluth_schools/",
+      "cacheSeconds": 600
+    }
+  }
+}
