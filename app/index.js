@@ -106,9 +106,26 @@ center: center,
 zoom: zoom
 });
  
+
 var geocoder1 = new MapboxGeocoder({
-accessToken: mapboxgl.accessToken,
-mapboxgl: mapboxgl
+    accessToken: mapboxgl.accessToken,
+    countries: 'us',
+    filter: function(item) {
+        return item.context
+            .map(function(i) {
+            return (
+            i.id.split('.').shift() === 'region' &&
+            i.text === 'Minnesota'
+            );
+            })
+            .reduce(function(acc, cur) {
+            return acc || cur;
+            });
+        },
+    marker: {
+    color: 'gray'
+    },
+    mapboxgl: mapboxgl
 });
 
 map1.scrollZoom.disable();
@@ -164,6 +181,7 @@ map1.on('load', function() {
             .setHTML(feature.properties.ES)
             .addTo(map1);
     });
+
 });
 
 
@@ -174,10 +192,26 @@ var map2 = new mapboxgl.Map({
     zoom: zoom
     });
      
-var geocoder2 = new MapboxGeocoder({
-accessToken: mapboxgl.accessToken,
-mapboxgl: mapboxgl
-});
+    var geocoder2 = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        countries: 'us',
+        filter: function(item) {
+            return item.context
+                .map(function(i) {
+                return (
+                i.id.split('.').shift() === 'region' &&
+                i.text === 'Minnesota'
+                );
+                })
+                .reduce(function(acc, cur) {
+                return acc || cur;
+                });
+            },
+        marker: {
+        color: 'gray'
+        },
+        mapboxgl: mapboxgl
+    });
 
 map2.scrollZoom.disable();
 map2.dragRotate.disable();
@@ -245,8 +279,24 @@ var map3 = new mapboxgl.Map({
     });
  
 var geocoder3 = new MapboxGeocoder({
-accessToken: mapboxgl.accessToken,
-mapboxgl: mapboxgl
+    accessToken: mapboxgl.accessToken,
+    countries: 'us',
+    filter: function(item) {
+        return item.context
+            .map(function(i) {
+            return (
+            i.id.split('.').shift() === 'region' &&
+            i.text === 'Minnesota'
+            );
+            })
+            .reduce(function(acc, cur) {
+            return acc || cur;
+            });
+        },
+    marker: {
+    color: 'gray'
+    },
+    mapboxgl: mapboxgl
 });
 
 map3.scrollZoom.disable();
@@ -309,6 +359,8 @@ $(".reset").on("click", function(){
     map1.flyTo({center: center, zoom: zoom});
     map2.flyTo({center: center, zoom: zoom});
     map3.flyTo({center: center, zoom: zoom});
+    $('.mapboxgl-ctrl-geocoder--input').val('');
+    $( ".marker" ).remove();
 });
 
 
