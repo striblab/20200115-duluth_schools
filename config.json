@@ -23,7 +23,11 @@
   },
   "js": {
     "globals": [
-      "https://cdn.polyfill.io/v2/polyfill.min.js"
+      "https://cdn.polyfill.io/v2/polyfill.min.js",
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+      "https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js",
+      "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"
+
     ]
   },
   "publishToken": "3ca29abf2c621b9a9777fd0ba98c4b46",
