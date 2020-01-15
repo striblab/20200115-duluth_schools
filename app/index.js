@@ -90,6 +90,11 @@ utils.environmentNoting();
 //   });
 // });
 
+import scenario1 from '../sources/scenario1.json';
+import scenario2 from '../sources/scenario2.json';
+import scenario3 from '../sources/scenario3.json';
+
+
 var center = [-92.06090600142731, 46.930417334742174];
 var zoom = 8.4;
 
@@ -117,7 +122,7 @@ map1.on('load', function() {
 
     map1.addSource('nb1', {
         type: 'geojson',
-        data: './shapefiles/scenario1.geojson'
+        data: scenario1
       });
 
       map1.addLayer({
@@ -186,7 +191,7 @@ map2.on('load', function() {
 
     map2.addSource('nb2', {
         type: 'geojson',
-        data: './shapefiles/scenario2.geojson'
+        data: scenario2
       });
 
       map2.addLayer({
@@ -256,7 +261,7 @@ map3.on('load', function() {
 
     map3.addSource('nb3', {
         type: 'geojson',
-        data: './shapefiles/scenario3.geojson'
+        data: scenario3
       });
 
       map3.addLayer({
