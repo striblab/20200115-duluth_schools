@@ -360,7 +360,7 @@ $(".reset").on("click", function(){
     map2.flyTo({center: center, zoom: zoom});
     map3.flyTo({center: center, zoom: zoom});
     $('.mapboxgl-ctrl-geocoder--input').val('');
-    $( ".marker" ).remove();
+    $('.mapboxgl-marker').hide();
 });
 
 
