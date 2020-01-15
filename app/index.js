@@ -132,6 +132,7 @@ map1.scrollZoom.disable();
 map1.dragRotate.disable();
 // map1.doubleClickZoom.disable();
 map1.touchZoomRotate.disableRotation();
+map1.addControl(new mapboxgl.NavigationControl());
  
 document.getElementById('geocoder1').appendChild(geocoder1.onAdd(map1));
 
@@ -156,31 +157,44 @@ map1.on('load', function() {
          }
     }, 'settlement-label');
 
-    var popup1 = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
-    });
-
-    map1.on('mousemove', function(e) {
-        var features = map1.queryRenderedFeatures(e.point, {
-            layers: ['nb-layer1']
-        });
-        // Change the cursor style as a UI indicator.
-        map1.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-        if (!features.length) {
-            popup1.remove();
-            return;
+    map1.addLayer({
+        'id': 'poi-labels',
+        'type': 'symbol',
+        'source': 'nb1',
+        'layout': {
+        'text-size': 9,
+        'text-field': ['get', 'ES'],
+        // 'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+        // 'text-radial-offset': 0.5,
+        // 'text-justify': 'auto'
         }
+     });
 
-        var feature = features[0];
+    // var popup1 = new mapboxgl.Popup({
+    //     closeButton: false,
+    //     closeOnClick: false
+    // });
 
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup1.setLngLat(e.lngLat)
-            .setHTML(feature.properties.ES)
-            .addTo(map1);
-    });
+    // map1.on('mousemove', function(e) {
+    //     var features = map1.queryRenderedFeatures(e.point, {
+    //         layers: ['nb-layer1']
+    //     });
+    //     // Change the cursor style as a UI indicator.
+    //     map1.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+    //     if (!features.length) {
+    //         popup1.remove();
+    //         return;
+    //     }
+
+    //     var feature = features[0];
+
+    //     // Populate the popup and set its coordinates
+    //     // based on the feature found.
+    //     popup1.setLngLat(e.lngLat)
+    //         .setHTML(feature.properties.ES)
+    //         .addTo(map1);
+    // });
 
 });
 
@@ -217,6 +231,7 @@ map2.scrollZoom.disable();
 map2.dragRotate.disable();
 // map2.doubleClickZoom.disable();
 map2.touchZoomRotate.disableRotation();
+map2.addControl(new mapboxgl.NavigationControl());
      
 document.getElementById('geocoder2').appendChild(geocoder2.onAdd(map2));
 
@@ -242,31 +257,44 @@ map2.on('load', function() {
          }
     }, 'settlement-label');
 
-    var popup2 = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
-    });
-
-    map2.on('mousemove', function(e) {
-        var features = map2.queryRenderedFeatures(e.point, {
-            layers: ['nb-layer2']
-        });
-        // Change the cursor style as a UI indicator.
-        map2.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-        if (!features.length) {
-            popup2.remove();
-            return;
+    map2.addLayer({
+        'id': 'poi-labels',
+        'type': 'symbol',
+        'source': 'nb2',
+        'layout': {
+        'text-size': 9,
+        'text-field': ['get', 'ES'],
+        // 'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+        // 'text-radial-offset': 0.5,
+        // 'text-justify': 'auto'
         }
+     });
 
-        var feature = features[0];
+    // var popup2 = new mapboxgl.Popup({
+    //     closeButton: false,
+    //     closeOnClick: false
+    // });
 
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup2.setLngLat(e.lngLat)
-            .setHTML(feature.properties.ES)
-            .addTo(map2);
-    });
+    // map2.on('mousemove', function(e) {
+    //     var features = map2.queryRenderedFeatures(e.point, {
+    //         layers: ['nb-layer2']
+    //     });
+    //     // Change the cursor style as a UI indicator.
+    //     map2.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+    //     if (!features.length) {
+    //         popup2.remove();
+    //         return;
+    //     }
+
+    //     var feature = features[0];
+
+    //     // Populate the popup and set its coordinates
+    //     // based on the feature found.
+    //     popup2.setLngLat(e.lngLat)
+    //         .setHTML(feature.properties.ES)
+    //         .addTo(map2);
+    // });
 });
 
 
@@ -303,7 +331,7 @@ map3.scrollZoom.disable();
 map3.dragRotate.disable();
 // map3.doubleClickZoom.disable();
 map3.touchZoomRotate.disableRotation();
-
+map3.addControl(new mapboxgl.NavigationControl());
  
 document.getElementById('geocoder3').appendChild(geocoder3.onAdd(map3));
 
@@ -328,31 +356,44 @@ map3.on('load', function() {
          }
     }, 'settlement-label');
 
-    var popup3 = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
-    });
-
-    map3.on('mousemove', function(e) {
-        var features = map3.queryRenderedFeatures(e.point, {
-            layers: ['nb-layer3']
-        });
-        // Change the cursor style as a UI indicator.
-        map3.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-        if (!features.length) {
-            popup3.remove();
-            return;
+    map3.addLayer({
+        'id': 'poi-labels',
+        'type': 'symbol',
+        'source': 'nb3',
+        'layout': {
+        'text-size': 9,
+        'text-field': ['get', 'ES'],
+        // 'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+        // 'text-radial-offset': 0.5,
+        // 'text-justify': 'auto'
         }
+     });
 
-        var feature = features[0];
+    // var popup3 = new mapboxgl.Popup({
+    //     closeButton: false,
+    //     closeOnClick: false
+    // });
 
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup3.setLngLat(e.lngLat)
-            .setHTML(feature.properties.ES)
-            .addTo(map3);
-    });
+    // map3.on('mousemove', function(e) {
+    //     var features = map3.queryRenderedFeatures(e.point, {
+    //         layers: ['nb-layer3']
+    //     });
+    //     // Change the cursor style as a UI indicator.
+    //     map3.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+    //     if (!features.length) {
+    //         popup3.remove();
+    //         return;
+    //     }
+
+    //     var feature = features[0];
+
+    //     // Populate the popup and set its coordinates
+    //     // based on the feature found.
+    //     popup3.setLngLat(e.lngLat)
+    //         .setHTML(feature.properties.ES)
+    //         .addTo(map3);
+    // });
 });
 
 $(".reset").on("click", function(){
