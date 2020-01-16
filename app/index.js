@@ -99,6 +99,7 @@ var center = [-92.06090600142731, 46.930417334742174];
 var zoom = 8.4;
 var minzoom = 8.4;
 
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhcnRyaWJ1bmUiLCJhIjoiY2sxYjRnNjdqMGtjOTNjcGY1cHJmZDBoMiJ9.St9lE8qlWR5jIjkPYd3Wqw';
 var map1 = new mapboxgl.Map({
 container: 'mapper1',
