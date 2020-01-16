@@ -72,3 +72,26 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 .reset:hover {
   cursor:pointer;
 }
+
+.adjacent {
+  display:inline-block;
+  width:32%;
+  text-align:center;
+  margin-bottom:15px;
+
+}
+
+.adjacent iframe {
+  width:100%;
+  height:400 !important;
+}
+
+.maphead {
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 38px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
